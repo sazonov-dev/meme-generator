@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="header__logo">Генератор мемов</h1>
+    </header>
+    <main class="main">
+        <section class="settings">
+            <div class="image-upload">
+                <label for="file">
+                    Загрузите изображение
+                    <input type="file" id="file">
+                </label>
+            </div>
+            <div class="text-settings">
+                <label for="text">
+                    Введите текст
+                    <input type="text" id="text">
+                </label>
+                <label for="x">
+                    Введите позицию x
+                    <input type="text" id="x">
+                </label>
+                <label for="y">
+                    Введите позицию y
+                    <input type="text" id="y">
+                </label>
+                <label for="y">
+                    Введите цвет #000
+                    <input type="text" id="color">
+                </label>
+                <label for="y">
+                    Введите font size
+                    <input type="text" id="fz">
+                </label>
+                <button class="addText">Добавить текст</button>
+            </div>
+            <div class="text-settings">
+                <label id="labelSelect" for="textSelect">
+                    Выбери текст, которому необходимо поменять положение, стили
+                    <select name="textSelect" id="textSelect"></select>
+                </label>
+                <label for="xInteractive">
+                    Введите позицию x
+                    <input type="text" id="xInteractive">
+                </label>
+                <label for="yInteractive">
+                    Введите позицию y
+                    <input type="text" id="yInteractive">
+                </label>
+                <label for="y">
+                    Введите цвет #000
+                    <input type="text" id="colorInteractive">
+                </label>
+                <label for="y">
+                    Введите font size
+                    <input type="text" id="fzInteractive">
+                </label>
+            </div>
+            <button class="saveMeme">Скачать мем</button>
+        </section>
+        <section class="draw">
+        </section>
+    </main>
+
+    <template id="image">
+        <div class="image">
+            <img class="canvas-img" src="" alt="">
+        </div>
+    </template>
+</body>
+</html>
